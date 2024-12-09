@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        Button b1 = findViewById(R.id.button);
+        Button b1 = findViewById(R.id.button1);
         b1.setText("Java is cool 😼");
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
