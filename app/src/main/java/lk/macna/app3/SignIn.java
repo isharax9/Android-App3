@@ -1,7 +1,9 @@
 package lk.macna.app3;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,7 +24,22 @@ public class SignIn extends AppCompatActivity {
             return insets;
         });
 
+        Button button = findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                EditText editTextText = findViewById(R.id.editTextText);
+                EditText editTextText2 = findViewById(R.id.editTextText2);
+
+                if(editTextText.getText().toString().equals("0710351156") && editTextText2.getText().toString().equals("1101")){
+                    System.out.println("Success");
+                }else{
+                    System.out.println("Error");
+                }
+
+            }
+        });
 
 
     }
