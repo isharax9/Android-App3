@@ -2,4 +2,8 @@
     <string name="app_name">App3</string>
     <string name="button1" translatable="false">Click Me !</string>
     <string name="textView1" translatable="false">Hello</string>
+    <string name="textView2" translatable="false">Mobile</string>
+    <string name="textView3" translatable="false">Password</string>
+    <string name="button2" translatable="false">Sign In</string>
+
 </resources>
