@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">App3</string>
-    <string name="button1_text">Hello!!</string>
+    <string name="button1" translatable="false">Click Me !</string>
+    <string name="textView1" translatable="false">Hello</string>
 </resources>
