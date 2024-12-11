@@ -1,5 +1,6 @@
 package lk.macna.app3;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -36,11 +37,9 @@ public class SignIn extends AppCompatActivity {
 
                 if(editTextText.getText().toString().equals("0710351156")
                         && editTextText2.getText().toString().equals("1101")){
-                    //Log.i("Log1", "Success");
-                    Toast.makeText(SignIn.this,"Success",Toast.LENGTH_LONG).show();
+                    new AlertDialog.Builder(SignIn.this).setTitle("Message").setMessage("Success").show();
                 }else{
-                    //Log.e("Log1", "Error");
-                    Toast.makeText(SignIn.this,"Error",Toast.LENGTH_LONG).show();
+                    new AlertDialog.Builder(SignIn.this).setTitle("Message").setMessage("Error").show();
                 }
             }
         });
