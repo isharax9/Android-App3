@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,9 +36,11 @@ public class SignIn extends AppCompatActivity {
 
                 if(editTextText.getText().toString().equals("0710351156")
                         && editTextText2.getText().toString().equals("1101")){
-                    Log.i("Log1", "Success");
+                    //Log.i("Log1", "Success");
+                    Toast.makeText(SignIn.this,"Success",Toast.LENGTH_LONG).show();
                 }else{
-                    Log.e("Log1", "Error");
+                    //Log.e("Log1", "Error");
+                    Toast.makeText(SignIn.this,"Error",Toast.LENGTH_LONG).show();
                 }
             }
         });
