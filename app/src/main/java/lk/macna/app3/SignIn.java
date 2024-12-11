@@ -1,6 +1,7 @@
 package lk.macna.app3;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -32,15 +33,13 @@ public class SignIn extends AppCompatActivity {
                 EditText editTextText = findViewById(R.id.editTextText);
                 EditText editTextText2 = findViewById(R.id.editTextText2);
 
-                if(editTextText.getText().toString().equals("0710351156") && editTextText2.getText().toString().equals("1101")){
-                    System.out.println("Success");
+                if(editTextText.getText().toString().equals("0710351156")
+                        && editTextText2.getText().toString().equals("1101")){
+                    Log.i("Log1", "Success");
                 }else{
-                    System.out.println("Error");
+                    Log.e("Log1", "Error");
                 }
-
             }
         });
-
-
     }
 }
